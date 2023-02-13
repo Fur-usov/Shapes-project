@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ShapesMain</class>
+ <widget class="QMainWindow" name="ShapesMain">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>659</width>
+    <height>318</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ShapesMain</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>0</y>
+      <width>641</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="firstShapeButton">
+       <property name="text">
+        <string>Create 1st Shape</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="secondShapeButton">
+       <property name="text">
+        <string>Create 2nd Shape</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="deleteSelectedButton">
+       <property name="text">
+        <string>Delete Selected</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>659</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDelete">
+    <property name="title">
+     <string>Delete</string>
+    </property>
+    <addaction name="actionDelete_All"/>
+    <addaction name="actionDelete_Intersecting"/>
+   </widget>
+   <addaction name="menuDelete"/>
+  </widget>
+  <action name="actionDraw">
+   <property name="text">
+    <string>Draw</string>
+   </property>
+  </action>
+  <action name="actionDelete_All">
+   <property name="text">
+    <string>Delete All</string>
+   </property>
+  </action>
+  <action name="actionDelete_Intersecting">
+   <property name="text">
+    <string>Delete Intersecting</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
